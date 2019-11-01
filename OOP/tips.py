@@ -78,3 +78,17 @@ for x, element in enumerate(my_list):
     #print(x, element)
     if x==1:
         print(f'element of interest is {element}')
+
+
+'''if__name__ == '__main__' ''' 
+
+print(__name__) #__main__
+
+
+def main():
+    print(f'First Module Name: {__name__}')
+
+
+if __name__ == '__main__': #says 'is this file being run directly by python or is it being imported?'. used whenever you want to only run the main file. if you have imported files/module. Python won't run it
+    main() #if true, run the main() method
+
