@@ -80,9 +80,11 @@ for x, element in enumerate(my_list):
         print(f'element of interest is {element}')
 
 
-'''if__name__ == '__main__' ''' 
+'''if__name__ == '__main__' : corey schafer'''
 
-print(__name__) #__main__
+# before python runs any file, it sets a few special variables and __name__ is one of those variables,
+#whenever python runs file from the main module it sets __name__ equal to __main__. if its imported file being run __name__ is set it as the actual name of the imported module.
+print(__name__)
 
 
 def main():
@@ -92,3 +94,4 @@ def main():
 if __name__ == '__main__': #says 'is this file being run directly by python or is it being imported?'. used whenever you want to only run the main file. if you have imported files/module. Python won't run it
     main() #if true, run the main() method
 
+#In short, use this ' if __name__ == "main" ' block to prevent (certain) code from being run when the module is imported. Put simply, __name__ is a variable defined for each script that defines whether the script is being run as the main module or it is being run as an imported module.
